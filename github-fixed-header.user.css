@@ -1,35 +1,15 @@
 /* ==UserStyle==
-@name        GitHub Fixed Header
-@version     1.2.18
-@description Add a pinned header on GitHub
-@namespace   github.com/StylishThemes
-@author      StylishThemes <https://github.com/StylishThemes>
-@homepageURL https://github.com/StylishThemes/GitHub-FixedHeader
-@supportURL  https://github.com/StylishThemes/GitHub-FixedHeader/issues
-@updateURL   https://github.com/StylishThemes/GitHub-FixedHeader/raw/master/github-fixed-header.user.css
+@name        GitHub Fixed Fixed Header
+@version     2.0.0
+@description Add a pinned header on GitHub is Fixed as Fixed
+@namespace   github.com/koumaza
+@author      koumaza <https://github.com/koumaza>
+@homepageURL https://github.com/koumaza/GitHub-FixedHeader
+@supportURL  https://github.com/koumaza/GitHub-FixedHeader/issues
+@updateURL   https://github.com/koumaza/GitHub-FixedHeader/raw/master/github-fixed-header.user.css
 @license     CC-BY-SA-4.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://((gist|guides|help|raw|status|developer)\\.)?github\\.com/((?!generated_pages/preview).)*$") {
-  /* AGENT_SHEET */
-  :root {
-    --height: 65px;
-    --secondary-height: 40px;
-  }
-  body:not(.project-full-screen),
-  /* .is-stuck = discussion sidebar & https://github.com/integrations > Category */
-  .is-stuck {
-    padding-top: var(--height) !important;
-  }
-  body.logged-out:not(.f4),
-  body.session-authentication {
-    padding-top: var(--height) !important;
-  }
-  .pr-toolbar.is-stuck .diffbar {
-    background: #ddd;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    padding: 8px;
-  }
   .gh-header .gh-header-sticky.is-stuck + .gh-header-shadow {
     top: var(--height) !important;
   }
